@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(to bottom right, #ffe4ec, #fff2f7);
+  color: #4b2c31;
+  text-align: center;
+  overflow-x: hidden;
+  opacity: 0;
+}
+
+.container {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  animation: fadeIn 2s forwards;
+}
+
+h1 {
+  font-family: 'Parisienne', cursive;
+  font-size: 3.2em;
+  color: #d63384;
+  margin-bottom: 0.2em;
+}
+
+.heart {
+  font-size: 64px;
+  animation: pulse 2s infinite;
+}
+
+.letter, .card {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 30px;
+  text-align: left;
+  line-height: 1.7;
+  font-size: 1.1em;
+}
+
+h2 {
+  color: #c2185b;
+  font-family: 'Parisienne', cursive;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.signature {
+  text-align: right;
+  font-style: italic;
+  margin-top: 20px;
+  color: #a0526c;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #999;
+}
+
+audio {
+  margin-top: 30px;
+}
+
+/* Typewriter Effect */
+.typewriter {
+  height: 100vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+#typewriter-text {
+  font-size: 1.8em;
+  font-family: 'Courier New', monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #b30059;
+  width: fit-content;
+  animation: blink 0.75s step-end infinite;
+  color: #b30059;
+  text-align: center;
+}
+
+
+
+.gallery {
+  margin-top: 60px;
+  text-align: center;
+}
+.gallery h2 {
+  color: #b30059;
+  margin-bottom: 10px;
+}
+
+.gallery-message {
+  font-style: italic;
+  margin-bottom: 30px;
+  color: #555;
+  font-size: 1em;
+}
+
+.quote-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.quote-gallery blockquote {
+  max-width: 600px;
+  background: #fff0f5;
+  padding: 20px 25px;
+  border-left: 6px solid #b30059;
+  border-radius: 12px;
+  font-style: italic;
+  font-size: 1.1em;
+  color: #6b2b45;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+/* Heart Animation */
+.falling-heart {
+  position: fixed;
+  top: -50px;
+  font-size: 24px;
+  animation: fall 5s linear infinite;
+  z-index: 1000;
+}
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
