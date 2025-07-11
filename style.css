@@ -72,16 +72,20 @@ audio {
 }
 
 #typewriter-text {
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-family: 'Courier New', monospace;
-  white-space: nowrap;
-  overflow: hidden;
   border-right: 2px solid #b30059;
-  width: fit-content;
-  animation: blink 0.75s step-end infinite;
   color: #b30059;
+  width: 100%;
+  max-width: 90vw;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: normal; /* 🔄 ini yang paling penting */
+  word-break: break-word; /* agar teks panjang dibungkus */
+  animation: blink 0.75s step-end infinite;
   text-align: center;
 }
+
 
 
 
